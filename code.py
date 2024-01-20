@@ -24,7 +24,7 @@ def check_ip():
     cmd = f"sudo proxychains4 ssh -i private_key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no {username}@{server_ip}"
     child = pexpect.spawn(cmd, timeout=10)
     password = child.expect("Password:")
-    sudo_password = "Hunter98"
+    sudo_password = ""
     if password == 0:
             child.sendline(sudo_password)
             time = child.expect("timer")
