@@ -55,7 +55,7 @@ PTY allocation request failed on channel 0
 {diagserver} 2023/10/09 04:53:41.071941 Starting connection timer...
 ```
 
-Proceeding with this challenge past this point requires **a lot** of trial and error. After playing wtih it for some time, I found that the server only accepts HTTP POST requests to a directory named _/diagnostics_. 
+Proceeding with this challenge past this point requires **a lot** of trial and error. After playing with it for some time, I found that the server only accepts HTTP POST requests to a directory named _/diagnostics_. 
 
 After finding the directory, I found that the server kept telling me that it required a command response with every status update:
 
